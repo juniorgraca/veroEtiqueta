@@ -13,6 +13,7 @@ export default function Home() {
 
   return (
     <>
+    <section className="no-print">
       <div className="homeMain">
         <div className="logoandselect">
           <div className="logoandselectArea">
@@ -28,6 +29,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }
