@@ -1,5 +1,5 @@
 
-import CookieBanner from "../cockiebanner/Cokckiebanner";
+
 import Navbar from "../navbar/Navbar";
 
 import "./Homeapp.css";
@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 function HomeApp() {
   return (
     <>
-     <CookieBanner></CookieBanner>
+
     <div className="homeAppContainer">
     <p className="titleWellcome">Bem Vindo ao StockTag <span className="veroColor">Vero</span></p>
     
