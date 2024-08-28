@@ -58,6 +58,10 @@ const Tabletls: React.FC = () => {
     setArmazensSelecionados(updatedArmazens);
   };
 
+  const handleResetItem = () =>{
+    setDados([])
+  }
+
   const handleChangeCodigo = (event: React.ChangeEvent<HTMLInputElement>) => setCodigo(event.target.value);
   const handleChangeName = (event: React.ChangeEvent<HTMLInputElement>) => setName(event.target.value);
   const handleChangeArmazemManual = (event: React.ChangeEvent<HTMLInputElement>) => setArmazemManual(event.target.value);
@@ -179,6 +183,7 @@ const Tabletls: React.FC = () => {
                 onChange={handleChangeQuantidade}
                 min="1"
               />
+              <button className="btnOnClick" onClick={handleResetItem}>Limpar</button>
               <button className="btnOnClick" onClick={handleAddItem}>Adicionar</button>
             </div>
           </div>

@@ -30,6 +30,9 @@ const Table: React.FC = () => {
       }
     });
 
+ 
+  
+
     const armazensArray = Array.from(armazens);
     setArmazensDisponiveis(armazensArray);
 
@@ -38,13 +41,17 @@ const Table: React.FC = () => {
     setArmazemManual('');
     setName(itemsData1.find((item) => item.Produto === codigo)?.Descricao || '');
   };
+  
 
   useEffect(() => {
     if (codigo) {
       fetchItemDescription(codigo);
     }
   }, [codigo]);
-
+  
+  const handleResetItem = () =>{
+    setDados([])
+  }
   const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
     const updatedArmazens = new Set(armazensSelecionados);
@@ -178,6 +185,7 @@ const Table: React.FC = () => {
                 onChange={handleChangeQuantidade}
                 min="1"
               />
+              <button className="btnOnClick" onClick={handleResetItem}>Limpar</button>
               <button className="btnOnClick" onClick={handleAddItem}>Adicionar</button>
             </div>
           </div>

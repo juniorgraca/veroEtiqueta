@@ -100,6 +100,10 @@ const Tablecg: React.FC = () => {
     }
   };
 
+  const handleResetItem = () =>{
+    setDados([])
+  }
+
   const splitIndex = Math.ceil(dados.length / 2);
   const dadosColuna1 = dados.slice(0, splitIndex);
   const dadosColuna2 = dados.slice(splitIndex);
@@ -179,6 +183,7 @@ const Tablecg: React.FC = () => {
                 onChange={handleChangeQuantidade}
                 min="1"
               />
+              <button className="btnOnClick" onClick={handleResetItem}>Limpar</button>
               <button className="btnOnClick" onClick={handleAddItem}>Adicionar</button>
             </div>
             </div>

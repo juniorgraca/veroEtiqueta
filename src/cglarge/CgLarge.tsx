@@ -68,6 +68,9 @@ const CgLarge: React.FC = () => {
     }
   };
 
+  const handleResetItem = () =>{
+    setDados([])
+  }
   const handleAddItem = () => {
     if (codigo && name && (armazensSelecionados.size > 0 || armazemManual)) {
       const armazensFinal = new Set(armazensSelecionados);
@@ -170,6 +173,7 @@ const CgLarge: React.FC = () => {
                   onChange={handleChangeQuantidade}
                   min="1"
                 />
+                <button className="btnOnClick" onClick={handleResetItem}>Limpar</button>
                 <button className="btnOnClick" onClick={handleAddItem}>Adicionar</button>
               </div>
             </div>
