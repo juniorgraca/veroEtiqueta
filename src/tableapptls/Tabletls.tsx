@@ -108,8 +108,9 @@ const Tabletls: React.FC = () => {
     <>
       <div>
         <div className="no-print">
+        <div className="bodyItem">
           <div className="info-section">
-            <h1>Bem-vindo ao gerador de etiqueta da VERO - Feito por Júnior Graça</h1>
+          
             <div className="area-dados">
               <Link to="/" className="link">Voltar ao início</Link>
               <p><b>Código do item</b></p>
@@ -181,6 +182,7 @@ const Tabletls: React.FC = () => {
               <button className="btnOnClick" onClick={handleAddItem}>Adicionar</button>
             </div>
           </div>
+        </div>
         </div>
 
         {Array.from({ length: Math.max(dadosColuna1.length, dadosColuna2.length) }).map((_, rowIndex) => (

@@ -1,0 +1,19 @@
+.hidden {
+  display: none;
+}
+
+.lkndBk{
+
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.iconClass{
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+
+}
+
+

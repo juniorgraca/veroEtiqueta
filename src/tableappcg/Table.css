@@ -17,6 +17,11 @@
 
 
 
+.bodyItem{
+  display: flex;
+  justify-content: center;
+
+}
 
 .btnOnClick{
   background-color: #ff6c98;

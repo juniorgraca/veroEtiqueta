@@ -1,4 +1,4 @@
-// Home.tsx
+
 import React from 'react';
 import "./Home.css";
 import veroLogo from "/verologo1.png";
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      </section>
+      </section>  
     </>
   );
 }

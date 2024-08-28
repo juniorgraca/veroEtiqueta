@@ -107,9 +107,9 @@ const Table: React.FC = () => {
   return (
     <>
       <div>
+      <div className="bodyItem">
         <div className="no-print">
           <div className="info-section">
-            <h1>Bem-vindo ao gerador de etiqueta da VERO - Feito por Júnior Graça</h1>
             <div className="area-dados">
               <Link to="/" className="link">Voltar ao início</Link>
               <p><b>Código do item</b></p>
@@ -180,6 +180,7 @@ const Table: React.FC = () => {
               />
               <button className="btnOnClick" onClick={handleAddItem}>Adicionar</button>
             </div>
+          </div>
           </div>
         </div>
 

@@ -1,0 +1,66 @@
+.homeAppContainer{
+
+  height: 100vh;
+  margin: 0 auto;
+  display: ruby-text;
+}
+
+
+.containetBtn{
+  display: flex
+}
+.cityTittle{
+  font-size: 1.3rem;
+  font-weight: bolder;
+  
+  margin-left: 20px;
+}
+.veroColor{
+  color: #ff6c98;
+  font-weight: bolder;
+}
+.btnStockTag{
+  background-color: #ff6c98;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 20px;
+  width: 200px;
+}
+
+.btnStockTagDisable{
+  background-color: #7a7a7a29;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 20px;
+  width: 200px;
+}
+
+.btnStockTag:hover{
+    background-color: #ecb9c9;
+    animation: cubic-bezier(0.075, 0.82, 0.165, 1) ;
+    cursor: pointer;
+  
+}
+
+.StockTagTittle{
+  font-size: 1rem;
+  font-weight: bolder;
+  width: 100%;
+}
+
+.StockTagSubtittle{
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+
+.linkadd{
+  color: black;
+  text-decoration: none;
+}
+
+.titleWellcome{
+  font-size: 2rem;
+  text-align: center;
+  width: 99%;
+}
