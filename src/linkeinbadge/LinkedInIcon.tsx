@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import logoLink from '../../public/logolink.svg';
+import logoLink from '/logolink.svg';
 import LinkedInBadge from './LinkedInBadge';
 import "./Lkndin.css";
 const LinkedInIcon = () => {
@@ -38,6 +38,7 @@ const LinkedInIcon = () => {
 
     <div className='iconClass'>
     <div className='no-print'>
+      <div className={`${lkdn ? 'hidden' : ''}`} >
     <img
         src={logoLink}
         width="85px"
@@ -50,8 +51,9 @@ const LinkedInIcon = () => {
       <div className='no-print'>
       <div className='lkndBk'>
        <div className={`${lkdn ? '' : 'hidden'}`}>
-       <LinkedInBadge></LinkedInBadge>
         </div>
+        </div>
+       <LinkedInBadge></LinkedInBadge>
         </div>
         </div>
     </>
