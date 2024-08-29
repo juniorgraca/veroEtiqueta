@@ -184,8 +184,8 @@ const CgLarge: React.FC = () => {
           {dados.map((item, index) => (
             <div key={index} className="item-containerlarge">
               <div className="textarealarge">
-                <p className="texdescrlarge"><p className="textClass"> <p className="texdescrlargedescr">{item.nome}</p></p></p>
                 <p className="texdescrlarge"><p className="textClass">CÓD.: {item.codigo}</p></p>
+                <p className="texdescrlarge"><p className="textClass"> <p className="texdescrlargedescr">{item.nome}</p></p></p>
               
                 {isChecked ? (
                   <>

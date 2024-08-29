@@ -195,13 +195,13 @@ const Tabletls: React.FC = () => {
             <div className="sect2">
               <div className="textarea">
                 <div className="pretext">
-                  <p className="texdescr">
-                    {dadosColuna1[rowIndex]?.nome || ''}
+                  <p className="textp">
+                    CÓD.: {dadosColuna1[rowIndex]?.codigo || ''}
                   </p>
                 </div>
                 <div className="pretext">
-                  <p className="textp">
-                    CÓD.: {dadosColuna1[rowIndex]?.codigo || ''}
+                  <p className="texdescr">
+                    {dadosColuna1[rowIndex]?.nome || ''}
                   </p>
                 </div>
                 {isChecked ? (
@@ -231,13 +231,13 @@ const Tabletls: React.FC = () => {
             <div className="sect1">
               <div className="textarea">
                 <div className="pretext">
-                  <p className="texdescr">
-                    {dadosColuna2[rowIndex]?.nome || ''}
+                  <p className="textp">
+                    CÓD.: {dadosColuna2[rowIndex]?.codigo || ''}
                   </p>
                 </div>
                 <div className="pretext">
-                  <p className="textp">
-                    CÓD.: {dadosColuna2[rowIndex]?.codigo || ''}
+                  <p className="texdescr">
+                    {dadosColuna2[rowIndex]?.nome || ''}
                   </p>
                 </div>
                 {isChecked ? (
